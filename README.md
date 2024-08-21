@@ -24,7 +24,7 @@ From our visualization, we can see that throughout the middle of the time period
 
 ## Regression Model
 
-A stochastic gradient descent regressor was used to generate a prediction based on the continuous data points, and a linear regression model was generated. Further work could include using Multiple Linear Regression to provide predictions during peak and subsequent dips and to predict annual COVID-19 concentration trends.
+A stochastic gradient descent regressor was used to generate a prediction based on the continuous data points, and a linear regression model was generated. Further work could include using a 2<sup>nd</sup> Polynomial Regression to provide predictions during peak and subsequent dips and to predict annual COVID-19 concentration trends.
 
 ## Conclusion
 
