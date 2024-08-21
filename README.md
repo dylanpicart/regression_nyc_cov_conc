@@ -24,10 +24,10 @@ From our visualization, we can see that throughout the middle of the time period
 
 ## Regression Model
 
-A stochastic gradient descent regressor was used to generate a prediction based on the continuous data points, and a linear regression model was generated. Further work could include using a 2<sup>nd</sup> Polynomial Regression to provide predictions during peak and subsequent dips and to predict annual COVID-19 concentration trends.
+A stochastic gradient descent regressor was used to generate a prediction based on the continuous data points, and a linear regression model was generated. Further work could include using a 2<sup>nd</sup> Order Polynomial Regression to provide predictions during peak and subsequent dips and to predict annual COVID-19 concentration trends.
 
 ## Conclusion
 
 Our Visualization clearly shows that COVID concentrations rise during the winter months and fall during as we move away from the wintertime. As we see in our Linear Regression Model, COVID-19 concentrations in the wastewater will continue to rise as winter draws near. Concurrently, we know that the COVID-19 rate has exponentially increased over time, so we need to adjust our model to make an accurate prediction beyond a steady increase.
 
-This modeling method can be applied to all 14 different locations where the genetic material for SARS-CoV-2 was measured to create predictions of COVID-19 concentrations throughout NYC. However, as these plots are inherently not linear, linear predictive models will, of course, not be the best method of predicting COVID-19 data points, unless we apply an extraordinary amount of SCGD best-fit lines similar to how we would when taking partial derivatives. In this case, we could try a Multiple Linear Regression.
+This modeling method can be applied to all 14 different locations where the genetic material for SARS-CoV-2 was measured to create predictions of COVID-19 concentrations throughout NYC. However, as these plots are inherently not linear, linear predictive models will, of course, not be the best method of predicting COVID-19 data points, unless we apply an extraordinary amount of SCGD best-fit lines similar to how we would when taking partial derivatives. In this case, we could try a 2<sup>nd</sup> Order Polynomial Regression instead to create a more accurate representation.
