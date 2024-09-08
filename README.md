@@ -1,6 +1,6 @@
-# Application of Linear Regression on SARS-CoV-2 concentrations measured in NYC Wastewater
+# Regression Analysis on SARS-CoV-2 concentrations measured in NYC Wastewater
 
-This project aims to utilize API building to source relevant data, SQL to create a database with tables to store, manipulate, and discover insights about this dataset, Pandas & Matplotlib to create visuals to gain insight into the trends of COVID-19 concentration trends over time, & a Linear Regression Model using scikit-learn to predict the trend of future COVID-19 concentrations in NYC wastewater.
+This project aims to utilize API building to source relevant data, SQL to create a database with tables to store, manipulate, and discover insights about this dataset, Pandas & Matplotlib to create visuals to gain insight into the trends of COVID-19 concentration trends over time, & a Linear Regression Model using scikit-learn to predict the trend of future SARS-CoV-2 concentrations in NYC wastewater.
 
 ## Dataset
 
@@ -10,7 +10,7 @@ The dataset used in this project is sourced from NYC OpenData and contains the t
 
 The analysis of this project covered the time period of 2020 - 2021. Data is updated monthly. Results of sampling to determine the SARS-CoV-2 N gene levels in NYC DEP Wastewater Resource Recovery Facility (WRRF) influent, disaggregated by the WRRF where the sample was collected, date sample was collected, and date sample was tested. This data contains sampling from multiple locations throughout NYC, and is appropriately labeled.
 
-**Important Note:** Covid concentrations in wastewater are not the same as Covid Case Rates and should be treated separately. In this project, I explore the commonalities between the infectious cases reported in media and the amount of gene levels prevalent in the wastewater. RT-qPCR was changed to digital PCR in April of 2023, resulting values are about 10-20 times higher than those of RT-qPCR. Please refer to the supporting documentation for more technical information.
+**Important Note:** Although SARS-CoV-2 is the virus that causes COVID-19 cases, concentrations in wastewater are not the same as COVID-19 Case Rates and should be treated separately. In this project, I explore the commonalities between the infectious cases reported in media and the amount of gene levels prevalent in the wastewater. RT-qPCR was changed to digital PCR in April of 2023, resulting values are about 10-20 times higher than those of RT-qPCR. Please refer to the supporting documentation for more technical information.
 
 ## Hypothesis
 
