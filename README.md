@@ -10,7 +10,7 @@ The dataset used in this project is sourced from NYC OpenData and contains the t
 
 The analysis of this project covered the time period of 2020 - 2021. Data is updated monthly. Results of sampling to determine the SARS-CoV-2 N gene levels in NYC DEP Wastewater Resource Recovery Facility (WRRF) influent, disaggregated by the WRRF where the sample was collected, date sample was collected, and date sample was tested. This data contains sampling from multiple locations throughout NYC, and is appropriately labeled.
 
-**Important Note:** Although SARS-CoV-2 is the virus that causes COVID-19 cases, concentrations in wastewater are not the same as COVID-19 Case Rates and should be treated separately. In this project, I explore the commonalities between the infectious cases reported in media and the amount of gene levels prevalent in the wastewater. RT-qPCR was changed to digital PCR in April of 2023, resulting values are about 10-20 times higher than those of RT-qPCR. Please refer to the supporting documentation for more technical information.
+**Important Note:** Although SARS-CoV-2 is the virus that causes COVID-19 cases, concentrations in wastewater are not the same as COVID-19 Case Rates and should be treated separately. In this project, I explore the commonalities between the infectious cases reported in media and the amount of gene levels prevalent in the wastewater. RT-qPCR was changed to digital PCR in April of 2023, resulting in values that are about 10-20 times higher than those of RT-qPCR. Please refer to the supporting documentation for more technical information.
 
 ## Hypothesis
 
@@ -28,7 +28,7 @@ A stochastic gradient descent regressor was used to generate a prediction based 
 
 ## Model Evaluation
 
-Investigating half of our data, our SCGD Regressor Model boasted an MSE of 34645021.8420 and an R<sup>2</sup> score of 0.4729. Our Polynomial Regression Modal Improved upon the accuracy, boasting an MSE of 19512261.4165 and an R<sup>2</sup> score of 0.7032. For a full cycle of our data, our Polynomial Regression model boasted an MSE of 32818683.7122 and an R<sup>2</sup> score of 0.5478.
+Investigating half of our data, our SCGD Regressor Model boasted an MSE of 34645021.8420 and an R<sup>2</sup> score of 0.4712. Our Polynomial Regression Modal Improved upon the accuracy, boasting an MSE of 19512261.4165 and an R<sup>2</sup> score of 0.7032. For a full cycle of our data, our Polynomial Regression model boasted an MSE of 32818683.7122 and an R<sup>2</sup> score of 0.5478.
 
 ## Conclusion
 
