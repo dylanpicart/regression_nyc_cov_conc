@@ -20,14 +20,18 @@ To test our hypothesis, we will run Data Visualizations across all areas tested 
 
 ## Visualization Insights
 
-From our visualization, we can see that throughout the middle of the time periods (from Dec - Feb), the concentrations of the genetic material was at an all-time high relative to the beginning and end months throughout all locations.
+From our visualization, we can see that throughout the middle of the periods (from Dec - Feb), the concentrations of the genetic material were at an all-time high relative to the beginning and end months throughout all locations.
 
 ## Regression Model
 
-A stochastic gradient descent regressor was used to generate a prediction based on the continuous data points, and a linear regression model was generated. Further work could include using a 2<sup>nd</sup> Order Polynomial Regression to provide predictions during peak and subsequent dips and to predict annual COVID-19 concentration trends.
+A stochastic gradient descent regressor was used to generate a prediction based on the continuous data points, and a linear regression model was generated. A 2<sup>nd</sup> Order Polynomial Regression was then used to compare and provide predictions during peak and subsequent dips and to predict annual COVID-19 concentration trends.
+
+## Model Evaluation
+
+Investigating half of our data, our SCGD Regressor Model boasted an MSE of 34645021.8412 and an R<sup>2</sup> score of 0.4729. Our Polynomial Regression Modal Improved upon the accuracy, boasting an MSE of 19512261.4165 and an R<sup>2</sup> score of 0.7032. For a full cycle of our data, our Polynomial Regression model boasted an MSE of 32818683.7122 and an R<sup>2</sup> score of 0.5478.
 
 ## Conclusion
 
-Our Visualization clearly shows that COVID concentrations rise during the winter months and fall during as we move away from the wintertime. As we see in our Linear Regression Model, COVID-19 concentrations in the wastewater will continue to rise as winter draws near. Concurrently, we know that the COVID-19 rate has exponentially increased over time, so we need to adjust our model to make an accurate prediction beyond a steady increase.
+Our visualization clearly shows that SARS-CoV-2 concentrations rise during the winter months and fall as we move away from the wintertime, which is in tandem with the rise and fall of COVID-19 cases throughout New York City. As our Linear Regression Model shows, SARS-CoV-2 concentrations in the wastewater will continue to rise as winter draws near. Concurrently, we know that the COVID-19 rate has exponentially increased over time, so we need to adjust our model to make an accurate prediction beyond a steady increase.
 
-This modeling method can be applied to all 14 different locations where the genetic material for SARS-CoV-2 was measured to create predictions of COVID-19 concentrations throughout NYC. However, as these plots are inherently not linear, linear predictive models will, of course, not be the best method of predicting COVID-19 data points, unless we apply an extraordinary amount of SCGD best-fit lines similar to how we would when taking partial derivatives. In this case, we could try a 2<sup>nd</sup> Order Polynomial Regression instead to create a more accurate representation.
+This modeling method can be applied to all 14 locations where the genetic material for SARS-CoV-2 was measured to create predictions of COVID-19 concentrations throughout NYC. However, as these plots are inherently not linear, linear predictive models will not be the best method of predicting COVID-19 data points unless we apply an extraordinary amount of SCGD best-fit lines similar to how we would when taking partial derivatives. Our 2<sup>nd</sup> Order Polynomial Regression created a significantly more accurate representation of wastewater concentrations and could be applied to the fluctuations of SARS-CoV-2 concentrations over a more extended period.
