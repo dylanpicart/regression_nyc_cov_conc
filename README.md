@@ -28,7 +28,7 @@ A stochastic gradient descent regressor was used to generate a prediction based 
 
 ## Model Evaluation
 
-Investigating half of our data, our SCGD Regressor Model boasted an MSE of 34645021.8412 and an R<sup>2</sup> score of 0.4729. Our Polynomial Regression Modal Improved upon the accuracy, boasting an MSE of 19512261.4165 and an R<sup>2</sup> score of 0.7032. For a full cycle of our data, our Polynomial Regression model boasted an MSE of 32818683.7122 and an R<sup>2</sup> score of 0.5478.
+Investigating half of our data, our SCGD Regressor Model boasted an MSE of 34645021.8420 and an R<sup>2</sup> score of 0.4729. Our Polynomial Regression Modal Improved upon the accuracy, boasting an MSE of 19512261.4165 and an R<sup>2</sup> score of 0.7032. For a full cycle of our data, our Polynomial Regression model boasted an MSE of 32818683.7122 and an R<sup>2</sup> score of 0.5478.
 
 ## Conclusion
 
