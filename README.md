@@ -24,7 +24,7 @@ From our visualization, we can see that throughout the middle of the periods (fr
 
 ## Regression Model
 
-A stochastic gradient descent regressor was used to generate a prediction based on the continuous data points, and a linear regression model was generated. A 2<sup>nd</sup> Order Polynomial Regression was then used to compare and provide predictions during peak and subsequent dips and to predict annual COVID-19 concentration trends.
+A stochastic gradient descent regressor was used to generate a prediction based on the continuous data points, and a linear regression model was generated. A 2<sup>nd</sup> Order Polynomial Regression was then used to compare and provide predictions during peak and subsequent dips and to predict annual SARS-CoV-2 concentration trends.
 
 ## Model Evaluation
 
