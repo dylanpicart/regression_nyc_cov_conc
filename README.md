@@ -1,10 +1,10 @@
 # Regression Analysis on SARS-CoV-2 concentrations measured in NYC Wastewater
 
-This project aims to utilize API building to source relevant data, SQL to create a database with tables to store, manipulate, and discover insights about this dataset, Pandas & Matplotlib to create visuals to gain insight into the trends of COVID-19 concentration trends over time, & a Linear Regression Model using scikit-learn to predict the trend of future SARS-CoV-2 concentrations in NYC wastewater.
+This project aims to utilize API building to source relevant data, SQL to create a database with tables to store, manipulate, and discover insights about this dataset, Pandas & Matplotlib to create visuals to gain insight into the trends of COVID-19 infection rates over time, & a Linear Regression Model using scikit-learn to predict the trend of future SARS-CoV-2 concentrations in NYC wastewater.
 
 ## Dataset
 
-The dataset used in this project is sourced from NYC OpenData and contains the testing dates, locations, COVID-19 concentrations, annotations, etc., which are important in measuring the trends over time. For a comprehensive description of this dataset, please refer to the documentation source found [here](https://data.cityofnewyork.us/Health/SARS-CoV-2-concentrations-measured-in-NYC-Wastewat/f7dc-2q9f).
+The dataset used in this project is sourced from NYC OpenData and contains the testing dates, locations, SARS-CoV-2 concentrations, annotations, etc., which are important in measuring the trends over time. For a comprehensive description of this dataset, please refer to the documentation source found [here](https://data.cityofnewyork.us/Health/SARS-CoV-2-concentrations-measured-in-NYC-Wastewat/f7dc-2q9f).
 
 ## Data Context
 
@@ -14,7 +14,7 @@ The analysis of this project covered the time period of 2020 - 2021. Data is upd
 
 ## Hypothesis
 
-During the height of the COVID-19 pandemic in New York City, we had skyrocketing cases of COVID-19 infections during the winter months, and diminishing cases as we got closer to spring and summertime. While COVID-19 case diagnoses are not the same as COVID-19 concentrations in wastewater, there is more than likely a correlation between rising cases and the amount of genetic material prevalent in wastewater. As covid cases rose, so would the concentrations of SARS-COV-2 detected in wastewater.
+During the height of the COVID-19 pandemic in New York City, we had skyrocketing cases of COVID-19 infections during the winter months, and diminishing cases as we got closer to spring and summertime. While COVID-19 case diagnoses are not the same as SARS-CoV-2 concentrations in wastewater, there is more than likely a correlation between rising cases and the amount of genetic material prevalent in wastewater. As covid cases rose, so would the concentrations of SARS-COV-2 detected in wastewater.
 
 To test our hypothesis, we will run Data Visualizations across all areas tested & build a Linear Regression Model to predict the trend of subsequent genetic concentrations in wastewater.
 
@@ -34,4 +34,4 @@ Investigating half of our data, our SCGD Regressor Model boasted an MSE of 34645
 
 Our visualization clearly shows that SARS-CoV-2 concentrations rise during the winter months and fall as we move away from the wintertime, which is in tandem with the rise and fall of COVID-19 cases throughout New York City. As our Linear Regression Model shows, SARS-CoV-2 concentrations in the wastewater will continue to rise as winter draws near. Concurrently, we know that the COVID-19 rate has exponentially increased over time, so we need to adjust our model to make an accurate prediction beyond a steady increase.
 
-This modeling method can be applied to all 14 locations where the genetic material for SARS-CoV-2 was measured to create predictions of COVID-19 concentrations throughout NYC. However, as these plots are inherently not linear, linear predictive models will not be the best method of predicting COVID-19 data points unless we apply an extraordinary amount of SCGD best-fit lines similar to how we would when taking partial derivatives. Our 2<sup>nd</sup> Order Polynomial Regression created a significantly more accurate representation of wastewater concentrations and could be applied to the fluctuations of SARS-CoV-2 concentrations over a more extended period.
+This modeling method can be applied to all 14 locations where the genetic material for SARS-CoV-2 was measured to create predictions of COVID-19 infection rates throughout NYC. However, as these plots are inherently not linear, linear predictive models will not be the best method of predicting SARS-CoV-2 data points unless we apply an extraordinary amount of SCGD best-fit lines similar to how we would when taking partial derivatives. Our 2<sup>nd</sup> Order Polynomial Regression created a significantly more accurate representation of wastewater concentrations and could be applied to the fluctuations of SARS-CoV-2 concentrations over a more extended period.
