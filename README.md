@@ -24,14 +24,18 @@ From our visualization, we can see that throughout the middle of the periods (fr
 
 ## Regression Model
 
-A stochastic gradient descent regressor was used to generate a prediction based on the continuous data points, and a linear regression model was generated. A 2<sup>nd</sup> Order Polynomial Regression was then used to compare and provide predictions during peak and subsequent dips and to predict annual SARS-CoV-2 concentration trends.
+A Stochastic Gradient Descent Regression was used to generate a prediction based on the continuous data points. An n<sup>th</sup> Order Polynomial Regression was then used to compare and provide predictions during peak and subsequent dips and to predict annual SARS-CoV-2 concentration trends.
 
 ## Model Evaluation
 
-Investigating half of our data, our SCGD Regressor Model boasted an MSE of 34645021.8420 and an R<sup>2</sup> score of 0.4712. Our Polynomial Regression Modal Improved upon the accuracy, boasting an MSE of 19512261.4165 and an R<sup>2</sup> score of 0.7032. For a full cycle of our data, our Polynomial Regression model boasted an MSE of 32818683.7122 and an R<sup>2</sup> score of 0.5478.
+Investigating half of our data, our SCGD Regressor Model boasted an MSE of **22660251.5549** and an R<sup>2</sup> score of 0.4712. Our Polynomial Regression Modal Improved upon the accuracy, boasting an MSE of 19512261.4165 and an R<sup>2</sup> score of **0.6945**. Our SGD model performed poorly for the full data, with a Mean Squared Error score of **116656126.2294** and an R<sup>2</sup> score of **-0.6071**. 
+
+From our Polynomial Regression model, we were able to improve upon the accuracy of our initial regressor model, predicting the first half of the time period with a Mean Squared Error of **20952772.0967** and an and an R<sup>2</sup> score of **0.7175**. We were also able to predict the entire time period with a Mean Squared Error of **18215929.828180835** and an R<sup>2</sup> score of **0.7490**.
+
+Applying our Polynomial Regression to all 14 WFFR sites gave us a diverse application of Regression lines, with an average MSE of **26281551.2641** and an average R<sup>2</sup> score of **0.6386**.
 
 ## Conclusion
 
 Our visualization clearly shows that SARS-CoV-2 concentrations rise during the winter months and fall as we move away from the wintertime, which is in tandem with the rise and fall of COVID-19 cases throughout New York City. As our Linear Regression Model shows, SARS-CoV-2 concentrations in the wastewater will continue to rise as winter draws near. Concurrently, we know that the COVID-19 rate has exponentially increased over time, so we need to adjust our model to make an accurate prediction beyond a steady increase.
 
-This modeling method can be applied to all 14 locations where the genetic material for SARS-CoV-2 was measured to create predictions of COVID-19 infection rates throughout NYC. However, as these plots are inherently not linear, linear predictive models will not be the best method of predicting SARS-CoV-2 data points unless we apply an extraordinary amount of SCGD best-fit lines similar to how we would when taking partial derivatives. Our 2<sup>nd</sup> Order Polynomial Regression created a significantly more accurate representation of wastewater concentrations and could be applied to the fluctuations of SARS-CoV-2 concentrations over a more extended period.
+This modeling method can be applied to all 14 locations where the genetic material for SARS-CoV-2 was measured to create predictions of COVID-19 infection rates throughout NYC. However, as these plots are inherently not linear, linear predictive models will not be the best method of predicting SARS-CoV-2 data points unless we apply an extraordinary amount of SCGD best-fit lines similar to how we would when taking derivatives. Our n<sup>th</sup> Order Polynomial Regression created a significantly more accurate representation of wastewater concentrations and could be applied to the fluctuations of SARS-CoV-2 concentrations over a more extended period.
